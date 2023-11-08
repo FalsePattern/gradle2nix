@@ -1,7 +1,5 @@
 @file:Suppress("UnstableApiUsage")
 
-enableFeaturePreview("ONE_LOCKFILE_PER_PROJECT")
-
 pluginManagement {
     val shadowVersion: String by settings
     val stutterVersion: String by settings
@@ -29,7 +27,7 @@ plugins {
 
 dependencyResolutionManagement {
     repositories {
-        jcenter()
+        mavenCentral()
         maven { url = uri("https://repo.gradle.org/gradle/libs-releases") }
     }
     repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)

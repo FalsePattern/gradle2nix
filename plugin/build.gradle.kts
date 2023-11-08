@@ -21,7 +21,7 @@ dependencyLocking {
 }
 
 configurations {
-    compile {
+    implementation {
         dependencies.remove(project.dependencies.gradleApi())
     }
 }
@@ -58,10 +58,6 @@ gradlePlugin {
             implementationClass = "org.nixos.gradle2nix.Gradle2NixPlugin"
         }
     }
-}
-
-kotlinDslPluginOptions {
-    experimentalWarning.set(false)
 }
 
 stutter {

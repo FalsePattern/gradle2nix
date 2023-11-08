@@ -20,7 +20,6 @@ import org.apache.ivy.plugins.resolver.AbstractResolver
 import org.apache.ivy.plugins.resolver.IBiblioResolver
 import org.apache.ivy.plugins.resolver.URLResolver
 import org.apache.maven.artifact.repository.metadata.io.xpp3.MetadataXpp3Reader
-import org.codehaus.plexus.util.ReaderFactory
 import org.codehaus.plexus.util.xml.pull.XmlPullParserException
 import org.gradle.api.Project
 import org.gradle.api.artifacts.repositories.ArtifactRepository
@@ -36,6 +35,7 @@ import org.gradle.api.logging.Logger
 import org.gradle.api.logging.Logging
 import org.gradle.authentication.aws.AwsImAuthentication
 import org.gradle.internal.authentication.AllSchemesAuthentication
+import org.gradle.internal.impldep.org.codehaus.plexus.util.ReaderFactory
 import org.gradle.kotlin.dsl.getCredentials
 import java.io.IOException
 import java.net.URI

@@ -96,7 +96,7 @@ internal class ConfigurationResolver(
             name = componentId.module,
             version = componentId.version,
             type = resolvedArtifact.type,
-            extension = resolvedArtifact.extension,
+            extension = resolvedArtifact.extension!!,
             classifier = resolvedArtifact.classifier
         )
 
